@@ -15,17 +15,51 @@
     <body>
         
         <h1>Temperature Scale Covertor</h1>
-
+        
     <div id="container">
-    <p>Fahrenheit</p>
-    <div id="container2">
+        
+        <form >
+            <label for="scale">Scale</label><br> 
+            
+          
+            <select id="scale" name="scale">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="celcius">Celcius</option>
+              <option value="kelvin">Kelvin</option>
+              <option value="rankine">Rankine</option>
+            </select>
+            <!-- <input type="submit" value="Submit"> -->
+            </form>
+
+        
+
+    <div class="container2">
         <label for="value">Value</label>
         <input type="text" id="value" value="">
     </div>
+
     <button type="button" id="buttonId">Calculate</button>
     </div>
-    <p><strong>Celsius</strong></p>
-    <p id="result"></p> 
+    <div id="container3">
+                        <div class="container2">
+                        <p><strong>Fahrenheit</strong></p>
+                        <p id="Fresult"></p> 
+                    </div>
+                    <div class="container2">
+                        <p><strong>Celcius</strong></p>
+                        <p id="Cresult"></p> 
+                    </div>
+                        <div class="container2">
+                                <p><strong>Kelvin</strong></p>
+                                <p id="Kresult"></p> 
+                            </div>
+                            
+                            <div class="container2">
+                                <p><strong>Rankine</strong></p>
+                                <p id="Rresult"></p> 
+            </div>
+            
+    </div>
 
         
         <script src="JavaScript.js" async defer></script>
