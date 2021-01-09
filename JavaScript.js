@@ -38,8 +38,8 @@ function convertFromCelcius(inputValue){
   
   let cresult = inputValue,
   fresult = cresult * 1.8 + 32,
-  kresult = cresult + 273.15,
-  rresult = (cresult + 273.15 ) * 1.8;
+  kresult = (parseInt(cresult) + 273.15),
+  rresult = (parseInt(cresult) + 273.15) * 1.8;
 
   return celciusResult.textContent = cresult , kelvinResult.textContent = kresult, fahrenheitResult.textContent = fresult, rankineResult.textContent = rresult;
 }
